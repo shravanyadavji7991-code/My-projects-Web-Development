@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pmf Calculation</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart{
+            height: 300px;
+             width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="container">
+    <h2>Binomial Calculator</h2>
+
+    <input type="number" id="n"  placeholder="Number of trials (n)">
+    <input type="number" id="p"   step="0.01" placeholder="Probability (p)">
+    <input type="number" id="x"    placeholder="Value (x)">
+
+    <select id="type">
+        <option value="exact">P(X = x)</option>
+        <option value="cumulative">P(X ≤ x)</option>
+    </select>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="result">
+  </div>
+   <div id="mean">
+  </div>
+   <div id="vari">
+  </div>
+  <div class="chart">
+  <canvas id="myChart" width="600" height="300"></canvas>
+  </div>
+    </div>
+    <script src="./BinomialDistribution.js"></script>
+</body>
+</html>
