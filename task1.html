@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1in javascript</title>
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+   
+    <style>
+      body{
+        margin: 0px;
+        padding: 0px;
+      }
+     .body{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(209, 209, 111);
+      width: 100%;
+      height: 100vh;
+      
+     }
+     #main{
+      background-color: rgb(200, 90, 11);
+      width: 400px;
+      padding: 10px;
+     }
+     button{
+      display: block;
+      width: 50;
+      width: 110px;
+      background-color: greenyellow;
+      margin: 5px;
+      border-radius: 10px;
+     }
+     #root{
+      color: white;
+     }
+     span{
+      color: blue;
+     }
+        
+    </style>
+</head>
+<body>
+  <div class="body">
+ <div id="main">
+  <p style="color: white;">//#. array already created : [10,20,30,40]</p>
+<span>Enter The Number : </span>
+   <input type ="number" id="input" placeholder="enter the number" >
+ <div>
+  <button id="addBegin">ADDBEGIN</button>
+  <button id="addEnd">ADDEND</button>
+  <button id="deleteBegin">DELETEBEGIN</button>
+  <button id="deleteEnd">DELETEEND</button>
+ </div>
+  <div id="root"></div>
+  </div>
+  </div>
+  
+    <script src="./task1.js"></script>
+</body>
+</html>
